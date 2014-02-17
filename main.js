@@ -2,11 +2,12 @@ a.style.width=160+'px'
 a.style.height=200+'px'
 a.width=16
 a.height=20
+a.style.border='2px solid'
 
-c.fillRect(0,0,200,200)
+//c.fillRect(0,0,200,200)
 
 onmouseup = onmousemove = function(e) {
-    c.fillStyle='#fff'
+
     if(e.which) {
         c.fillRect(e.pageX/10|0, e.pageY/10|0, 1, 1)
         return
@@ -22,11 +23,16 @@ onmouseup = onmousemove = function(e) {
 
         //console.log(JSON.stringify(out.reduce(function(s, v){!v?s.b++ : s.w++;return s}, {w:0,b:0})))
         // NN code here
+
+        //input = [123,456,789,123,456,789,456,789,123,456,789,456,789,123,456,789,456,789,123,456,789,456,789,123,456,789,456,789,123,456,789,456,789,123,456,789,456,789,123,456,789,456,789,123,456,789,456,789,123,456,789,456,789,123,456,789,456,789,123,456,789,456,789,123,456,789,456,789,123,456,789,456,789,123,456,789]
+
+        // first hidden layer is 320 x 15
+
+
         ans = 1
         //alert(ans)
     //}
 
-    c.fillStyle='#000'
-    c.fillRect(0,0,200,200)
+    c.clearRect(0,0,20,20)
 
 }
