@@ -11,17 +11,15 @@ a.height=20
 
 onmouseup = onmousemove = function(e) {
 
-    if(e.which) {
-        c.fillRect(e.pageX/10|0, e.pageY/10|0, 1, 1)
-        return
-    }
+    if(e.which) return c.fillRect(e.pageX/10|0, e.pageY/10|0, 1, 1)
+
 
     //function calc() {
         data = c.getImageData(0,0,16,20).data
         i = data.length + 4
-        out = []
+        input = []
         while(i-=4) {
-            out.push(!data[i]?0:1)
+            input.push(!data[i]?0:1)
         }
 
         //console.log(JSON.stringify(out.reduce(function(s, v){!v?s.b++ : s.w++;return s}, {w:0,b:0})))
@@ -36,6 +34,7 @@ onmouseup = onmousemove = function(e) {
         //alert(ans)
     //}
 
-    c.clearRect(0,0,20,20)
+    //c.clearRect(0,0,20,20)
+    a.width=16
 
 }
