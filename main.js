@@ -1,8 +1,11 @@
-a.style.width=160+'px'
-a.style.height=200+'px'
+with(a.style) {
+ width=160+'px'
+ height=200+'px'
+ border='2px solid'
+}
+
 a.width=16
 a.height=20
-a.style.border='2px solid'
 
 //c.fillRect(0,0,200,200)
 
