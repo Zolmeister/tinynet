@@ -1,4 +1,4 @@
 tinynet
 =======
 
-Inteded to be a handwritten digit recognition engine in 1kb. Incomplete.
+Inteded to be a neural network handwritten digit recognition engine in 1kb. Incomplete.
